@@ -80,6 +80,13 @@ class AppPanelProvider extends PanelProvider
                         'default' => 1,
                         'sm' => 2,
                     ]),
+
+                \Awcodes\FilamentQuickCreate\QuickCreatePlugin::make()
+                    ->includes([
+                        \App\Filament\Resources\UserResource::class,
+                    ])
+                    ->sortBy('navigation')
+                    ->keyBindings(['command+shift+a', 'ctrl+shift+a']),
             ])
             ->authMiddleware([
                 Authenticate::class,
