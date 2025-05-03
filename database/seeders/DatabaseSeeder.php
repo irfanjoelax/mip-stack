@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,11 +15,33 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // Pastikan permission memiliki guard yang sesuai
+        $guard = config('auth.defaults.guard', 'web');
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        // Buat role Super Admin jika belum ada
+        $superAdminRole = Role::firstOrCreate(['name' => 'super_admin', 'guard_name' => $guard]);
+
+        // Ambil semua permission yang ada
+        $permissions = Permission::pluck('name')->toArray();
+
+        // Attach semua permission ke role Super Admin
+        $superAdminRole->syncPermissions($permissions);
+
+        // Ambil user dengan ID 1
+        $user = User::factory()->create([
+            'name' => 'Muhammad Irfan Permana',
+            'email' => 'irfanthejoelax@gmail.com',
+            'password' => bcrypt('irfan020412'),
         ]);
+
+        if ($user) {
+            // Assign role Super Admin ke user
+            $user->assignRole($superAdminRole);
+
+            // Attach semua permission langsung ke user
+            $user->syncPermissions($permissions);
+        } else {
+            $this->command->error("User not created");
+        }
     }
 }
