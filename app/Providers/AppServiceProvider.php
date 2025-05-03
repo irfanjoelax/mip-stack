@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Filament\Forms\Form;
+use Filament\Support\Enums\ActionAlignment;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,6 +21,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Form::configureUsing(function (Form $form): void {
+            $form->actionsAlignment(ActionAlignment::End);
+        });
     }
 }
