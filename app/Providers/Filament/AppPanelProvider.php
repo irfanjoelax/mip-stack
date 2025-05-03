@@ -87,6 +87,10 @@ class AppPanelProvider extends PanelProvider
                     ])
                     ->sortBy('navigation')
                     ->keyBindings(['command+shift+a', 'ctrl+shift+a']),
+
+                \Devonab\FilamentEasyFooter\EasyFooterPlugin::make()
+                    ->withFooterPosition('sidebar.footer')
+                    ->withLogo(asset('images/logo-text.svg'), null),
             ])
             ->authMiddleware([
                 Authenticate::class,
