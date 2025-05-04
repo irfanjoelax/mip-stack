@@ -1,7 +1,6 @@
 ## 🎉 Getting Started
-- [Prologue] (index)
+- [Prologue](content/index)
 - [Configuration](content/configuration)
-- [Sqlite Index](content/index)
 
 ## 😎 Features
 
