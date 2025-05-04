@@ -1,7 +1,6 @@
 <x-filament::widget>
     <x-filament::card class="bg-gradient-to-r from-indigo-500 to-blue-500 text-white shadow-xl">
 
-
         <div class="flex items-center justify-between">
             <div class="flex items-center gap-4">
                 <x-filament::avatar src="{{ asset('images/logo.svg') }}" alt="Avatar" :circular="false" />
@@ -20,7 +19,7 @@
                     Sign Out
                 </x-filament::button>
             </form>
-
         </div>
+
     </x-filament::card>
 </x-filament::widget>
