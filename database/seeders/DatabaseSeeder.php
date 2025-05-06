@@ -29,9 +29,9 @@ class DatabaseSeeder extends Seeder
 
         // Ambil user dengan ID 1
         $user = User::factory()->create([
-            'name' => 'Muhammad Irfan Permana',
-            'email' => 'irfanthejoelax@gmail.com',
-            'password' => bcrypt('irfan020412'),
+            'name' => 'Super Administrator',
+            'email' => 'admin@admin.com',
+            'password' => bcrypt('password'),
         ]);
 
         if ($user) {

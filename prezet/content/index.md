@@ -1,63 +1,55 @@
 ---
-title: Prologue
-excerpt: Learn about the SQLite index used by Prezet to manage and query markdown content.
-date: 2024-05-04
+title: Pengenalan
+excerpt: Pengenalan MIP Stack sebagai boilerplate untuk mempercepat pengembangan aplikasi Laravel dan Filament.
+date: 2024-05-06
 category: Getting Started
 image: /prezet/img/ogimages/index.png
 ---
 
-# MIP-Stack
+## Apa itu MIP Stack?
 
-**MIP-Stack** adalah starter template Laravel modern yang dikembangkan oleh **Muhammad Irfan Permana** untuk mempercepat proses pengembangan aplikasi berbasis Laravel dan Filament.
+**MIP Stack** adalah sebuah boilerplate aplikasi berbasis **Laravel 12** dan **Filament 3** yang dirancang khusus untuk mempercepat proses pengembangan aplikasi web, terutama panel admin dan sistem manajemen data internal. Dengan struktur kode yang rapi, modular, serta fitur-fitur yang telah siap pakai, MIP Stack memungkinkan developer untuk langsung fokus pada pengembangan fitur utama aplikasi tanpa harus membangun ulang pondasi yang berulang setiap kali memulai proyek baru.
 
-## Fitur Utama
+Boilerplate ini sangat cocok untuk:
+- Pengembangan dashboard internal perusahaan
+- Aplikasi manajemen data pengguna, transaksi, laporan, dan entitas lainnya
+- Sistem informasi berbasis web dengan antarmuka admin yang intuitif dan modern
 
--   Laravel 12
--   Filament 3 (Admin Panel)
--   Autentikasi siap pakai
--   Struktur folder rapi & scalable
+## Tujuan Dibuatnya MIP Stack
 
-## Instalasi
+MIP Stack dibuat dengan tujuan utama:
+- **Mengurangi repetisi** dalam memulai proyek Laravel + Filament dari awal
+- **Memberikan struktur standar** dan best-practice dalam membangun aplikasi
+- **Mempermudah integrasi fitur umum** seperti autentikasi, role-permission, dan manajemen pengguna
+- **Mempercepat time-to-launch** bagi tim pengembang, freelancer, maupun instansi yang memerlukan aplikasi berbasis Laravel
 
--   Clone repositori MIP-Stack dari GitHub ke komputer lokal Anda. Gantilah namakamu dengan username GitHub Anda jika berbeda.
+## Keunggulan Utama
 
-```bash
-git clone https://github.com/namakamu/mip-stack.git
-```
+- ✅ Sudah dilengkapi sistem autentikasi: login, register, update profile  
+- ✅ Panel admin siap pakai berbasis Filament 3  
+- ✅ Role dan permission menggunakan plugin **Filament Shield**  
+- ✅ Komponen tambahan seperti **Quick Create** dan **Easy Footer**  
+- ✅ Kode bersih, rapi, dan siap untuk dikembangkan lebih lanjut  
+- ✅ Berlisensi terbuka dan dapat digunakan bebas
 
--   Masuk ke folder proyek hasil clone untuk mulai bekerja di dalam direktori aplikasi.
+## Siapa yang Cocok Menggunakan MIP Stack?
 
-```bash
-cd mip-stack
-```
+- 🧑‍💻 **Freelancer** yang ingin mempercepat pembuatan aplikasi untuk klien
+- 🏢 **Tim internal perusahaan** yang butuh dashboard cepat
+- 🎓 **Mahasiswa dan dosen** yang ingin belajar atau mengajar pengembangan aplikasi Laravel dengan stack modern
+- 🚀 **Startup** yang ingin MVP-nya lebih cepat rilis tanpa mengorbankan struktur proyek
 
--   Menginstal semua dependency PHP yang dibutuhkan Laravel berdasarkan file composer.json.
+## Arsitektur Ringkas
 
-```bash
-composer install
-```
+- **Backend**: Laravel 12
+- **Frontend Admin**: Filament 3 + Tailwind CSS
+- **Manajemen Hak Akses**: Filament Shield (berbasis Spatie Permission)
+- **Ekstensi Plugin**: Quick Create, Easy Footer, dan lainnya
+- **Database Support**: MySQL/MariaDB/PostgreSQL
+- **Deployment Ready**: Local, VPS, atau platform cloud seperti Laravel Forge, Ploi, dll.
 
--   Menyalin konfigurasi default dari .env.example menjadi .env, yang akan digunakan Laravel untuk membaca pengaturan aplikasi.
+---
 
-```bash
-cp .env.example .env
-```
+### Siap Memulai?
 
--   Menghasilkan application key dan menyimpannya ke file .env. Key ini digunakan Laravel untuk enkripsi data dan session.
-
-```bash
-php artisan key:generate
-```
-
--   Menjalankan migration untuk membuat tabel-tabel database yang dibutuhkan aplikasi.
-
-```bash
-php artisan migrate
-```
-
--   Menjalankan server lokal Laravel agar aplikasi bisa diakses melalui browser di http://127.0.0.1:8000
-
-```bash
-php artisan serve
-```
-
+MIP Stack hadir untuk membantu Anda **beralih dari setup ke solusi nyata** secepat mungkin.     Lanjut untuk mulai menggunakan MIP Stack di proyek Anda.

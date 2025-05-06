@@ -1,6 +1,10 @@
-## 🎉 Getting Started
-- [Prologue](content/index)
-- [Configuration](content/configuration)
+## 🚀 Ayo Mulai
+- [Pengenalan](content/index)
+- [Teknologi yang digunakan](content/technology)
+- [Stack Tech](content/started/stack)
+- [Lisensi](content/started/license)
+- [Instalasi](content/started/instalation)
+<!-- - [Configuration](content/configuration) -->
 
 ## 😎 Features
 

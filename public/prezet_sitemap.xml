@@ -1,53 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>http://127.0.0.1:8000/prezet/features/jsonld</loc>
+        <loc>http://127.0.0.1:8000/docs/features/jsonld</loc>
         <lastmod>2025-05-04T04:35:17+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://127.0.0.1:8000/prezet/features/sitemap</loc>
+        <loc>http://127.0.0.1:8000/docs/features/sitemap</loc>
         <lastmod>2025-05-04T04:35:17+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://127.0.0.1:8000/prezet/configuration</loc>
+        <loc>http://127.0.0.1:8000/docs/configuration</loc>
         <lastmod>2025-05-04T04:35:17+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://127.0.0.1:8000/prezet/index</loc>
-        <lastmod>2025-05-04T05:35:48+00:00</lastmod>
+        <loc>http://127.0.0.1:8000/docs/index</loc>
+        <lastmod>2025-05-06T11:41:44+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://127.0.0.1:8000/prezet/features/markdown</loc>
+        <loc>http://127.0.0.1:8000/docs/features/markdown</loc>
         <lastmod>2025-05-04T04:35:17+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://127.0.0.1:8000/prezet/features/blade</loc>
+        <loc>http://127.0.0.1:8000/docs/features/blade</loc>
         <lastmod>2025-05-04T04:35:17+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://127.0.0.1:8000/prezet/features/ogimage</loc>
+        <loc>http://127.0.0.1:8000/docs/features/ogimage</loc>
         <lastmod>2025-05-04T04:35:17+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://127.0.0.1:8000/prezet/features/frontmatter</loc>
+        <loc>http://127.0.0.1:8000/docs/features/frontmatter</loc>
         <lastmod>2025-05-04T04:35:17+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://127.0.0.1:8000/prezet/features/images</loc>
+        <loc>http://127.0.0.1:8000/docs/features/images</loc>
         <lastmod>2025-05-04T04:35:17+00:00</lastmod>
 
             </url>
     <url>
-        <loc>http://127.0.0.1:8000/prezet/features/seo</loc>
+        <loc>http://127.0.0.1:8000/docs/features/seo</loc>
         <lastmod>2025-05-04T04:35:17+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/docs/technology</loc>
+        <lastmod>2025-05-06T11:57:01+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/docs/started/stack</loc>
+        <lastmod>2025-05-06T12:08:51+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/docs/started/license</loc>
+        <lastmod>2025-05-06T12:12:32+00:00</lastmod>
+
+            </url>
+    <url>
+        <loc>http://127.0.0.1:8000/docs/started/instalation</loc>
+        <lastmod>2025-05-06T12:17:14+00:00</lastmod>
 
             </url>
 </urlset>
